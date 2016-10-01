@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	<LinearLayout
+		android:id="@+id/main_layout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_centerInParent="true"
+		android:padding="8dp">
+		
+		<EditText
+			android:id="@+id/main_input"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:singleLine="true"
+			android:hint="@string/hint"/>
+		
+		<Button
+			android:id="@+id/main_doit"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/doit"/>
+		
+	</LinearLayout>
+	
+	<Button
+		android:id="@+id/main_split"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/split"
+		android:layout_margin="8dp"
+		android:layout_below="@id/main_layout"/>
+	
+    <TextView
+		android:id="@+id/main_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_below="@id/main_split"
+		android:layout_centerInParent="true"
+		android:textSize="16sp"
+		android:layout_marginTop="8dp"
+		android:text="@string/you"/>
+	
+	<TextView
+		android:id="@+id/main_result"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_margin="16dp"
+		android:textSize="40sp"
+		android:gravity="center"
+		android:layout_below="@id/main_text"/>
+
+</RelativeLayout>

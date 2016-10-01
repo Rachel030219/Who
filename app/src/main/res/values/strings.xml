@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Who</string>
+	<string name="hint">输入值，以英文分号“ ; ”分割</string>
+	<string name="doit">走你</string>
+	<string name="stop">停！</string>
+	<string name="split">快捷分割</string>
+    <string name="you">就是你了！</string>
+
+</resources>

@@ -17,10 +17,10 @@ limitations under the License.
 <resources>
 
     <string name="app_name">Who</string>
-	<string name="hint">Input values, split it by a ";"</string>
-	<string name="doit">Go</string>
-	<string name="stop">Stop!</string>
-	<string name="split">Faster Split</string>
-    <string name="you">It is:</string>
+    <string name="hint">输入值，以英文分号“;”分割</string>
+    <string name="doit">走你</string>
+    <string name="stop">停！</string>
+    <string name="split">快捷分割</string>
+    <string name="you">就是你了：</string>
 
 </resources>

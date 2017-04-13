@@ -67,7 +67,7 @@ public class MainActivity extends Activity
 								if(clicked)
 									now = 0;
 							}
-							handler.postDelayed(this,10);
+							handler.postDelayed(this,20);
 						}
 					};
 					if(!clicked){
@@ -90,8 +90,11 @@ public class MainActivity extends Activity
 		split.setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View v){
-				input.setText(input.getText()+";");
-				input.setSelection(input.getText().length());
+				int selection = input.getSelectionStart();
+				StringBuilder builder = new StringBuilder(input.getText().toString());
+				builder.insert(selection,";");
+				input.setText(builder.toString());
+				input.setSelection(selection + 1);
 			}
 		});
     }
@@ -102,7 +105,7 @@ public class MainActivity extends Activity
 		// TODO: Implement this method
 		if(keyCode == KeyEvent.KEYCODE_BACK){
 			SharedPreferences shared = getSharedPreferences("saved",MODE_PRIVATE);
-			shared.edit().putString("saved",input.getText().toString()).commit();
+			shared.edit().putString("saved",input.getText().toString()).apply();
 			finish();
 			return true;
 		}
